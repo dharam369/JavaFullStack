@@ -16,21 +16,20 @@ public class RollHoldAssignment {
 			System.out.println("Turn "+turns_count);
 			System.out.println("Roll or Hold?(r/h) :");
 			choice=scanner.next().charAt(0);
-			int dicevalue= random.nextInt(6)+1;
-			System.out.println(dicevalue);
-			if(dicevalue==1) {
-				System.out.println("No Score : Turn Over!");
-				total_score-=turns_score;
-				System.out.println("Totat Score : "+total_score);
-				turns_score=0;
-				turns_count++;
-				continue;
+			
+			if(choice=='r') {
+				int dicevalue= random.nextInt(6)+1;
+				System.out.println(dicevalue);
+				if(dicevalue==1) {
+					System.out.println("No Score : Turn Over!");
+					turns_score=0;
+					turns_count++;
+					total_score=0;
+					continue;
+				}
+				turns_score= turns_score+dicevalue;
+				total_score+=dicevalue;
 			}
-			
-			turns_score= turns_score+dicevalue;
-			total_score+=dicevalue;
-				
-			
 			if(choice=='h') {
 				System.out.println("Turn Score : "+turns_score);
 				if(total_score<20)
@@ -40,7 +39,7 @@ public class RollHoldAssignment {
 			}	
 		}
 		System.out.println("You attemp total "+turns_count+" turns");
-		System.out.println("Totat Score : "+total_score);
+		System.out.println("Total Score : "+total_score);
 		
 		
 	}
