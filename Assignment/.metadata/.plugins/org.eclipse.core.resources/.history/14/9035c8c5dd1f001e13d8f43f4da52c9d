@@ -1,0 +1,16 @@
+package com.techlabs.filehandlings;
+
+import java.io.FileInputStream;
+
+import java.io.FileNotFoundException;
+
+
+public class First {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileInputStream inputstream=new FileInputStream("E:\\Full Stack Java\\data.txt"); 
+		
+	}
+
+}

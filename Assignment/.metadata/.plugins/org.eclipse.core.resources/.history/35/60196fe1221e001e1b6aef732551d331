@@ -1,0 +1,15 @@
+package com.swabhavtechlabs.introduction.Assignment;
+
+import java.util.Scanner;
+
+public class RandomString {
+
+	public static void main(String[] args) {
+		System.out.println("Input A Word");
+		Scanner scanner=new Scanner(System.in);
+		String word=scanner.next();
+		
+
+	}
+
+}

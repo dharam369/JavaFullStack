@@ -1,0 +1,25 @@
+package com.techlabs.opps;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		//Student student = new Student();
+		Student student;
+		student = new Student();
+		
+		
+		System.out.println(student.getName());
+		System.out.println(student.getRollnumber());
+		System.out.println(student.getPercentage());
+		
+		student.name="Dharam veer";
+		student.percentage=90;
+		student.setPercentage=90;
+
+		System.out.println(student.getName());
+		System.out.println(student.getRollnumber());
+		System.out.println(student.getPercentage());
+		
+	}
+
+}

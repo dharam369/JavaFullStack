@@ -1,0 +1,18 @@
+package com.techlabs.week3;
+
+public class Demo {
+	private int a;
+	private int b;
+	Demo(){
+		this.a=0;
+		this.b=0;
+	}
+	void Increment() {
+		a++;
+		b++;
+	}
+	public void Display() {
+		System.out.println("a"+a);
+		System.out.println("b"+b);
+	}
+}

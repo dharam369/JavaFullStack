@@ -1,0 +1,34 @@
+package com.swabhavtechlabs.introduction.Assignment;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomString {
+
+	public static void main(String[] args) {
+		System.out.println("Input A Word");
+		Scanner scanner=new Scanner(System.in);
+		Random random=new Random();
+		String word=scanner.next();
+		int size=word.length();
+		StringBuffer resultantword=new StringBuffer();
+		for(int i=0;i<size;i++)
+		{
+			resultantword.append('-');
+		}
+		System.out.println(resultantword.charAt(2));
+//		int randomnumbersize=random.nextInt(size);
+//		for(int i=0;i<randomnumbersize;i++)
+//		{
+//			int randomnumber=random.nextInt(size);
+//			resultantword.charAt(randomnumber)= 'a';//word.charAt(randomnumber);
+//			
+//		}
+		
+		
+		
+		
+
+	}
+
+}

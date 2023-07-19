@@ -1,0 +1,21 @@
+package com.techlabs.filehandlings;
+
+import java.io.FileInputStream;
+
+
+
+public class First {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		FileInputStream inputstream=new FileInputStream("E:\\Full Stack Java\\data.txt"); 
+		int ch;
+		while((ch=inputstream.read())!=-1)
+		{
+			System.out.println(ch);
+		}
+		inputstream.close();
+		
+	}
+
+}

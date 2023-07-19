@@ -1,0 +1,7 @@
+package com.techlabs.opps;
+
+public class Student {
+	String name;
+	int rollnumber;
+	double percentage;
+}

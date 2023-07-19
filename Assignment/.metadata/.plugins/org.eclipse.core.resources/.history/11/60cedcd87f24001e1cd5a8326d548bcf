@@ -1,0 +1,19 @@
+package com.techlabs.opps2;
+
+public class Employee1ArrayTest {
+
+	public static void main(String[] args) {
+		//Array of objects or class Employee1
+		// int arr[]=new int[5];
+		Employee1 employee1s[]=new Employee1[5];
+		for(int i=0;i<employee1s.length;i++)
+		{
+			employee1s[i]=new Employee1(i+1,"Ram",10000+(i*1000));
+		}
+		for(Employee1 employee1:employee1s) {
+			System.out.println(employee1);
+		}
+
+	}
+
+}

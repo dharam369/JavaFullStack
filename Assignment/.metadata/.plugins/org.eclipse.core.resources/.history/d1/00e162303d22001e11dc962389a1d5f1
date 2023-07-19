@@ -1,0 +1,23 @@
+package com.techlabs.opps2;
+
+
+enum Color{
+	RED,
+	GREEN,
+	BLUE,
+	YELLOW,
+	PINK;
+}
+
+public class EnumTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Color c1=Color.RED;
+		System.out.println(c1);
+		for(Color color:Color.valueOf()) {
+			System.out.println(color);
+		}
+	}
+
+}

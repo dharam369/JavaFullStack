@@ -1,0 +1,31 @@
+package com.techlabs.filehandlings;
+
+import java.io.FileInputStream;
+
+
+
+public class First {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		FileInputStream inputstream=new FileInputStream("E:\\Full Stack Java\\data.txt"); 
+		int ch;
+		int charcount=0,wordcount=0,linecount=1;
+		while((ch=inputstream.read())!=-1)
+		{
+			//System.out.println(ch);
+			charcount++;
+			if(ch==32)
+				wordcount++;
+			if(ch==13)
+				linecount++;
+		}
+		System.out.println(wordcount);
+		System.out.println(charcount);
+		System.out.println(linecount);
+		inputstream.close();
+		
+		
+	}
+
+}

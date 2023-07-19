@@ -1,0 +1,10 @@
+package com.swabhavtechlabs.introduction.Assignment;
+
+public class RandomString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

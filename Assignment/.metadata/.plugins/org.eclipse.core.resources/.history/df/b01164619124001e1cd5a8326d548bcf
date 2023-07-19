@@ -1,0 +1,16 @@
+package com.techlabs.reflection;
+
+public class First {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class reflectionString = Class.forName("Java.lang.String");
+		
+		System.out.println(reflectionString.getName());
+		System.out.println(reflectionString.getSimpleName());
+		System.out.println(reflectionString.getSuperclass());
+		
+		
+
+	}
+
+}

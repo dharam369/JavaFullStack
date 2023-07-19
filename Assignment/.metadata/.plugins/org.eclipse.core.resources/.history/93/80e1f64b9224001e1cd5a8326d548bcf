@@ -1,0 +1,22 @@
+package com.techlabs.reflection;
+
+import java.lang.reflect.Constructor;
+
+public class First {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class reflectionString = Class.forName("java.lang.String");
+		
+		System.out.println(reflectionString.getName());
+		System.out.println(reflectionString.getSimpleName());
+		System.out.println(reflectionString.getSuperclass());
+		
+		
+		System.out.println("Constructor in String Class");
+		Constructor constructors[]=reflectionString.getDeclaredConstructors();
+		for(Constructor constructor:constructors) {
+			System.out.println(constructor.getName());
+		}
+	}
+
+}

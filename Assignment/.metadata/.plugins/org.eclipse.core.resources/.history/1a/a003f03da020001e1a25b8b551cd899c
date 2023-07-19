@@ -1,0 +1,24 @@
+package com.techlabs.opps;
+
+import java.util.Scanner;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Employee employee=new Employee();
+		int id=scanner.nextInt();
+		employee.setEid(id);
+		String name=scanner.next();
+		employee.setEname(name);
+		int salary=scanner.nextInt();
+		employee.setSalary(salary);
+		
+		System.out.println(employee.getEid());
+		System.out.println(employee.getEname());
+		System.out.println(employee.getSalary());
+		
+
+	}
+
+}
