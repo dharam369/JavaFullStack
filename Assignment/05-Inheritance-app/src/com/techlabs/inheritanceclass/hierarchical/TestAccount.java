@@ -41,9 +41,6 @@ public class TestAccount {
 		}
 		else {
 			System.out.println("Enter Correct Types");
-		}
-		
-
+		}	
 	}
-
 }
